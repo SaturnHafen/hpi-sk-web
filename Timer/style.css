@@ -1,0 +1,53 @@
+:root {
+  --progress-ok: #00ff00;   /* green */
+  --progress-warn: #ffaa00; /* orange */
+  --progress-stop: #ff0000; /* red */
+
+  --progress-color: var(--progress-ok);
+  --progress-position: -100%; /* move progressbar to 0% visible */
+}
+
+#timer {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0;
+}
+
+#time_display {
+  /* alignment */
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 100%;
+  /*bottom: 30%;*/
+
+  /* styling */
+  font-weight: bold;
+  font-size: 20em;
+  color: var(--progress-color);
+}
+
+#loading_bar {
+  position: absolute;
+  /*bottom: 30%;*/
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  background-color: #bbbbbb; /* grey background */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#loading_bar::before { /* pseudo-element allowed? :) */
+  width: 100%;
+  background-color: var(--progress-color);
+  height: 40px;
+  position: absolute;
+  content: ' ';
+  border-radius: 10px;
+  transform: translate(var(--progress-position), 0%);
+
+  transition: transform 1s; /* animation */
+}

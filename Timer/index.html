@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pitchclock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body onload="setup()">
+    <section id="timer">
+      <h2 id="time_display">undefined</h2>
+      <span id="loading_bar"></span>
+    </section>
+    <section id="controls">
+      <label for="seconds">Sekunden</label>
+      <input id="seconds" type="number" name="seconds" value="0">
+        <button id="start" type="button" name="start">Start</button>
+        <button id="reset" type="button" name="reset">Reset</button>
+    </section>
+  </body>
+</html>
