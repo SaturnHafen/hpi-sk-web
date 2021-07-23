@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Passwortgenerator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+  	<h1>Passwortgenerator</h1>
+    <label for="alphabet">Gib hier alle Buchstaben ein, die verwendet werden können</label>
+    <input type="text" id="alphabet" value="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"></input>
+    <label for="length">Wie lang soll das Passwort sein</label>
+    <input id="length" type="number" value="6"></input>
+    <label for="password">Dein generiertes Passwort</label>
+    <input id="password" type="password" disabled></input>
+    <input type="button" onclick="generate()" value="Passwort erzeugen"></input>
+    <input id="toggle" type="checkbox" onclick="toggleHidden()" checked></input>
+    <label for="toggle">Passwort verstecken</label>
+  </body>
+</html>

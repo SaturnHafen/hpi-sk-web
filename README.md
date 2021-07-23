@@ -8,3 +8,6 @@ Konvertiert einen String in die Unicode Ziffernfolge und gibt diese Hexadezimal 
 
 ## Dice
 Ein browserbasiertes Würfeltool mit einer variablen Würfelzahl.
+
+## Password
+Ein Passwortgenerator mit variablem Eingabealphabet und variabler Passwortlänge.
